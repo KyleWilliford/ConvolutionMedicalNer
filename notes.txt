@@ -1,0 +1,75 @@
+Changed Python 2.7 -> 3.10
+pip install pandas, tables, nltk, spacy 3.1 (pip install "spacy~=3.1") required
+download https://www.lfd.uci.edu/~gohlke/pythonlibs/#pyodbc and install: pip install pyodbc‑4.0.32‑cp310‑cp310‑win_amd64.whl
+
+===============================================================================
+
+01-Extract-Timeseries-Features.ipynb
+
+CPU ~25% * 8 cores
+Memory 18GB (total with OS 25GB)
+GPU ~4-8%
+GPU VRAM ~0.1GB
+Disk write speed bottleneck when writing pickles (at end)
+longest step 9m
+
+===============================================================================
+
+02-Select-SubClinicalNotes.ipynb
+
+OSError: ``X:\mimic-iii\ConvolutionMedicalNer\data`` is not a regular file
+Solution:
+change
+MIMIC_EXTRACT_DATA = "data/all_hourly_data.h5"
+stats = pd.read_hdf(DATAPATH, 'patients')
+TIMELIMIT = 1 # 1day
+to
+MIMIC_EXTRACT_DATA = "data/all_hourly_data.h5"
+stats = pd.read_hdf(MIMIC_EXTRACT_DATA, 'patients')
+TIMELIMIT = 1 # 1day
+
+CPU <10% * 8 cores
+Memory 6GB  (total with OS 13GB)
+GPU ~0%
+GPU VRAM 0GB
+longest step <1m
+
+===============================================================================
+
+03-Preprocess-Clinical-Notes.ipynb
+
+LookupError: 
+**********************************************************************
+  Resource punkt not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  >>> import nltk
+  >>> nltk.download('punkt')
+
+CPU ~20% * 8 cores
+Memory 1GB  (total with OS 8GB)
+GPU ~8-15%
+GPU VRAM 0GB
+Disk read speed bottleneck when reading data files
+Disk write speed bottleneck when writing pickles (at end)
+longest step 12.5m
+
+===============================================================================
+
+04-Apply-med7-on-Clinical-Notes.ipynb
+
+OSError: [E050] Can't find model 'en_core_med7_lg'. It doesn't seem to be a Python package or a valid path to a data directory.
+
+Solution: https://github.com/kormilitzin/med7
+pip install https://huggingface.co/kormilitzin/en_core_med7_lg/resolve/main/en_core_med7_lg-any-py3-none-any.whl
+
+CPU ~20% * 8 cores
+Memory 3GB  (total with OS 10GB)
+GPU 0%
+GPU VRAM 0GB
+longest step 
+
+===============================================================================
+
+05-Represent-Entities-With-Different-Embeddings.ipynb
+
