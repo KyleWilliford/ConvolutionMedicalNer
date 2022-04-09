@@ -21,6 +21,11 @@ Modified by Kyle Williford, Jiehan Zhu - students at Georgia Institute of Techno
 ## Python Dependencies
 See `environment.yml`
 
+## Data & Pre-Trained Models
+* [MIMIC-III v1.4](https://physionet.org/content/mimiciii/1.4/)
+* [med7 pre-trained model](https://github.com/kormilitzin/med7)
+* [Word2Vec and FastText pre-trained models](https://github.com/kexinhuang12345/clinicalBERT)
+
 ## Usage
 
 0. Get credentialed for [MIMIC-III dataset, version 1.4](https://physionet.org/content/mimiciii/1.4/) (this may take several days)
@@ -66,7 +71,7 @@ The following steps can be run with `python` instead of a Jupyter Notebook.
 
 ## References
 
-Original project https://github.com/tanlab/ConvolutionMedicalNer
+Original project this is forked from https://github.com/tanlab/ConvolutionMedicalNer
 
 Download the MIMIC-III dataset via https://mimic.physionet.org/
 
