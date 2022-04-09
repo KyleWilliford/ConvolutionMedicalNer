@@ -33,6 +33,7 @@ $ git clone https://github.com/KyleWilliford/ConvolutionMedicalNer.git
 $ cd ConvolutionMedicalNer
 $ conda env create --file=environment.yml
 $ conda activate cse6250
+$ pip install --upgrade pip
 ```
 
 0. Extract `ADMISSIONS.csv.gz`, `NOTEEVENTS.csv.gz`, `ICUSTAYS.csv.gz` zips into `data` folder.
