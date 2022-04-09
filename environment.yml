@@ -166,4 +166,3 @@ dependencies:
     - werkzeug==2.1.1
     - wrapt==1.14.0
     - zipp==3.8.0
-prefix: /home/jzhu/anaconda3/envs/cse6250
