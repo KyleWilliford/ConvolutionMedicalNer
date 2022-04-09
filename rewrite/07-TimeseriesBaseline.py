@@ -99,17 +99,16 @@ def timeseries_model(layer_name, number_of_unit):
 
 # %%
 type_of_ner = "new"
+x_train_lstm = pd.read_pickle("../data/"+type_of_ner+"_x_train.pkl")
+x_dev_lstm = pd.read_pickle("../data/"+type_of_ner+"_x_dev.pkl")
+x_test_lstm = pd.read_pickle("../data/"+type_of_ner+"_x_test.pkl")
 
-x_train_lstm = pd.read_pickle("data/"+type_of_ner+"_x_train.pkl")
-x_dev_lstm = pd.read_pickle("data/"+type_of_ner+"_x_dev.pkl")
-x_test_lstm = pd.read_pickle("data/"+type_of_ner+"_x_test.pkl")
-
-y_train = pd.read_pickle("data/"+type_of_ner+"_y_train.pkl")
-y_dev = pd.read_pickle("data/"+type_of_ner+"_y_dev.pkl")
-y_test = pd.read_pickle("data/"+type_of_ner+"_y_test.pkl")
+y_train = pd.read_pickle("../data/"+type_of_ner+"_y_train.pkl")
+y_dev = pd.read_pickle("../data/"+type_of_ner+"_y_dev.pkl")
+y_test = pd.read_pickle("../data/"+type_of_ner+"_y_test.pkl")
 
 # %%
-epoch_num = 100
+epoch_num = 50
 model_patience = 3
 monitor_criteria = 'val_loss'
 batch_size = 128
@@ -132,14 +131,16 @@ for each_layer in layers:
                 print ("Problem type: ", each_problem)
                 print ("__________________")
 
+                name = str(each_layer)+"-"+str(each_unit_size)+"-"+str(each_problem)
 
                 early_stopping_monitor = EarlyStopping(monitor=monitor_criteria, patience=model_patience)
-                best_model_name = str(each_layer)+"-"+str(each_unit_size)+"-"+str(each_problem)+"-"+"best_model.hdf5"
+                best_model_name = name+"-"+"best_model.hdf5"
                 checkpoint = ModelCheckpoint(best_model_name, monitor='val_loss', verbose=1,
                     save_best_only=True, mode='min', period=1)
+                tb_callback = tf.keras.callbacks.TensorBoard(f'./logs/{name}', update_freq=1, write_graph=True)
 
 
-                callbacks = [early_stopping_monitor, checkpoint]
+                callbacks = [early_stopping_monitor, checkpoint, tb_callback]
 
                 model = timeseries_model(each_layer, each_unit_size)
                 model.fit(x_train_lstm, y_train[each_problem], epochs=epoch_num, verbose=1, 

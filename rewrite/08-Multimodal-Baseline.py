@@ -3,8 +3,8 @@ import pandas as pd
 import os
 import numpy as np
 from gensim.models import Word2Vec, FastText
-import glove
-from glove import Corpus
+# import glove
+# from glove import Corpus
 
 import collections
 import gc 
@@ -17,11 +17,11 @@ from keras.layers import Flatten, Dense, Dropout, Input, concatenate, merge, Act
 from keras.layers import Input, Conv2D, MaxPooling2D, UpSampling2D, Conv1D, BatchNormalization, GRU, Convolution1D, LSTM
 from keras.layers import UpSampling1D, MaxPooling1D, GlobalMaxPooling1D, GlobalAveragePooling1D,MaxPool1D, merge
 
-from keras.optimizers import Adam
+from keras.optimizers import adam_v2
 
 from keras.callbacks import EarlyStopping, ModelCheckpoint, History, ReduceLROnPlateau
 from keras.utils import np_utils
-from keras.backend.tensorflow_backend import set_session, clear_session, get_session
+from tensorflow.compat.v1.keras.backend import set_session, clear_session, get_session
 import tensorflow as tf
 
 
@@ -101,7 +101,7 @@ def avg_ner_model(layer_name, number_of_unit, embedding_name):
                   kernel_regularizer=logits_regularizer)(x)
     
     
-    opt = Adam(lr=0.001, decay = 0.01)
+    opt = adam_v2(lr=0.001, decay = 0.01)
     model = Model(inputs=[sequence_input, input_avg], outputs=preds)
     model.compile(loss='binary_crossentropy',
                   optimizer=opt,
@@ -124,9 +124,25 @@ ner_word2vec = pd.read_pickle("data/"+type_of_ner+"_ner_word2vec_limited_dict.pk
 ner_fasttext = pd.read_pickle("data/"+type_of_ner+"_ner_fasttext_limited_dict.pkl")
 ner_concat = pd.read_pickle("data/"+type_of_ner+"_ner_combined_limited_dict.pkl")
 
-train_ids = pd.read_pickle("data/"+type_of_ner+"_train_ids.pkl")
-dev_ids = pd.read_pickle("data/"+type_of_ner+"_dev_ids.pkl")
-test_ids = pd.read_pickle("data/"+type_of_ner+"_test_ids.pkl")
+Ys =  pd.read_pickle("data/Ys.pkl")
+Ys_train =  pd.read_pickle("data/Ys_train.pkl")
+Ys_dev =  pd.read_pickle("data/Ys_dev.pkl")
+Ys_test =  pd.read_pickle("data/Ys_test.pkl")
+all_train_ids = set()
+for i in Ys_train.itertuples():
+    all_train_ids.add( i.Index[0] )
+all_dev_ids = set()
+for i in Ys_dev.itertuples():
+    all_dev_ids.add( i.Index[0] )
+all_test_ids = set()
+for i in Ys_test.itertuples():
+    all_test_ids.add( i.Index[0] )
+new_word2vec_dict = pd.read_pickle("data/"+"new_ner"+"_word2vec_limited_dict.pkl")
+new_word2vec_dict = pd.read_pickle("../data/new_ner_word2vec_dict.pkl")
+new_keys = set(new_word2vec_dict.keys())
+new_train_ids = sorted(all_train_ids.intersection(new_keys))
+new_dev_ids = sorted(all_dev_ids.intersection(new_keys))
+new_test_ids = sorted(all_test_ids.intersection(new_keys))
 
 # %%
 embedding_types = ['word2vec', 'fasttext', 'concat']
@@ -168,13 +184,15 @@ for each_layer in layers:
                     print ("Problem type: ", each_problem)
                     print ("__________________")
 
+                    name="avg-"+str(embed_name)+"-"+str(each_problem)
                     early_stopping_monitor = EarlyStopping(monitor=monitor_criteria, patience=model_patience)
-                    best_model_name = "avg-"+str(embed_name)+"-"+str(each_problem)+"-"+"best_model.hdf5"
+                    best_model_name = name+"-"+"best_model.hdf5"
                     checkpoint = ModelCheckpoint(best_model_name, monitor='val_loss', verbose=1,
                         save_best_only=True, mode='min', period=1)
+                    tb_callback = tf.keras.callbacks.TensorBoard(f'./logs/{name}', update_freq=1, write_graph=True)
 
 
-                    callbacks = [early_stopping_monitor, checkpoint]
+                    callbacks = [early_stopping_monitor, checkpoint, tb_callback]
 
                     model = avg_ner_model(each_layer, each_unit_size, embed_name)
                     
@@ -186,9 +204,9 @@ for each_layer in layers:
 
                     probs, predictions = make_prediction_multi_avg(model, [x_test_lstm, x_test_ner])
                     
-                    #save_scores_multi_avg(predictions, probs, y_test[each_problem], 
-                    #            embed_name, each_problem, iteration, each_unit_size, 
-                    #            each_layer, type_of_ner)
+                    save_scores_multi_avg(predictions, probs, y_test[each_problem], 
+                               embed_name, each_problem, iteration, each_unit_size, 
+                               each_layer, type_of_ner)
                     
                     reset_keras(model)
                     #del model

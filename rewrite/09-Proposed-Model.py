@@ -21,7 +21,7 @@ from keras.optimizers import Adam
 
 from keras.callbacks import EarlyStopping, ModelCheckpoint, History, ReduceLROnPlateau
 from keras.utils import np_utils
-from keras.backend.tensorflow_backend import set_session, clear_session, get_session
+from tensorflow.compat.v1.keras.backend import set_session, clear_session, get_session
 import tensorflow as tf
 
 
@@ -231,19 +231,20 @@ for embed_dict, embed_name in zip(embedding_dict, embedding_types):
             print ("Problem type: ", each_problem)
             print ("__________________")
             
-            
+            name=str(ner_representation_limit)+"-basiccnn1d-"+str(embed_name)+"-"+str(each_problem)
             early_stopping_monitor = EarlyStopping(monitor=monitor_criteria, patience=model_patience)
             
-            best_model_name = str(ner_representation_limit)+"-basiccnn1d-"+str(embed_name)+"-"+str(each_problem)+"-"+"best_model.hdf5"
+            best_model_name = name+"-"+"best_model.hdf5"
             
             checkpoint = ModelCheckpoint(best_model_name, monitor=monitor_criteria, verbose=1,
                 save_best_only=True, mode='min')
+            tb_callback = tf.keras.callbacks.TensorBoard(f'./logs/{name}', update_freq=1, write_graph=True)
             
             reduce_lr = ReduceLROnPlateau(monitor=monitor_criteria, factor=0.2,
                               patience=2, min_lr=0.00001, epsilon=1e-4, mode='min')
             
 
-            callbacks = [early_stopping_monitor, checkpoint, reduce_lr]
+            callbacks = [early_stopping_monitor, checkpoint, reduce_lr, tb_callback]
             
             #model = textCNN(sequence_model, sequence_hidden_unit, embed_name, ner_representation_limit)
             model = proposedmodel(sequence_model, sequence_hidden_unit, 
