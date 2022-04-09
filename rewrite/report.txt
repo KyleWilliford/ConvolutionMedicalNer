@@ -1,0 +1,75 @@
+TensorFlow 2.0 Upgrade Script
+-----------------------------
+Converted 6 files
+Detected 0 issues that require attention
+--------------------------------------------------------------------------------
+================================================================================
+Detailed log follows:
+
+================================================================================
+================================================================================
+Input tree: 'orginal/'
+================================================================================
+--------------------------------------------------------------------------------
+Processing file 'orginal/04-Apply-med7-on-Clinical-Notes.py'
+ outputting to 'rewrite/04-Apply-med7-on-Clinical-Notes.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'orginal/08-Multimodal-Baseline.py'
+ outputting to 'rewrite/08-Multimodal-Baseline.py'
+--------------------------------------------------------------------------------
+
+97:25: INFO: Multiplying scale arg of tf.contrib.layers.l2_regularizer by half to what tf.keras.regularizers.l2 expects.
+
+100:44: INFO: Changing tf.contrib.layers xavier initializer to a tf.compat.v1.keras.initializers.VarianceScaling and converting arguments.
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'orginal/06-Create-Timeseries-Data.py'
+ outputting to 'rewrite/06-Create-Timeseries-Data.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'orginal/07-TimeseriesBaseline.py'
+ outputting to 'rewrite/07-TimeseriesBaseline.py'
+--------------------------------------------------------------------------------
+
+88:25: INFO: Multiplying scale arg of tf.contrib.layers.l2_regularizer by half to what tf.keras.regularizers.l2 expects.
+
+90:44: INFO: Changing tf.contrib.layers xavier initializer to a tf.compat.v1.keras.initializers.VarianceScaling and converting arguments.
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'orginal/09-Proposed-Model.py'
+ outputting to 'rewrite/09-Proposed-Model.py'
+--------------------------------------------------------------------------------
+
+134:44: INFO: Changing tf.contrib.layers xavier initializer to a tf.compat.v1.keras.initializers.VarianceScaling and converting arguments.
+
+138:43: INFO: Changing tf.contrib.layers xavier initializer to a tf.compat.v1.keras.initializers.VarianceScaling and converting arguments.
+
+142:43: INFO: Changing tf.contrib.layers xavier initializer to a tf.compat.v1.keras.initializers.VarianceScaling and converting arguments.
+
+163:25: INFO: Multiplying scale arg of tf.contrib.layers.l2_regularizer by half to what tf.keras.regularizers.l2 expects.
+
+165:44: INFO: Changing tf.contrib.layers xavier initializer to a tf.compat.v1.keras.initializers.VarianceScaling and converting arguments.
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Processing file 'orginal/05-Represent-Entities-With-Different-Embeddings.py'
+ outputting to 'rewrite/05-Represent-Entities-With-Different-Embeddings.py'
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+

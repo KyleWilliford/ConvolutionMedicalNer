@@ -65,11 +65,47 @@ pip install https://huggingface.co/kormilitzin/en_core_med7_lg/resolve/main/en_c
 
 CPU ~20% * 8 cores
 Memory 3GB  (total with OS 10GB)
-GPU 0%
-GPU VRAM 0GB
-longest step 
+GPU 5%
+GPU VRAM 2.5GB
+longest step 540m
 
 ===============================================================================
 
 05-Represent-Entities-With-Different-Embeddings.ipynb
 
+the way to get word embedding is not supported anymore. (eg, Line 75 w2vec[i[0]], fasttext[i[0]])
+
+fasttemp = fasttext[i[0]]
+
+new_fasttext_dict, new_word2vec_dict not defined
+
+Need to fix how they delete patients that are not in all the dataset.
+
+===============================================================================
+
+06-Create-Timeseries-Data.ipynb
+
+SEED is not defined. Maybe they tried different SEED and publish the results with best perforance. 
+
+change as_matrix to as_numpy
+
+===============================================================================
+
+07-TimeseriesBaseline.ipynb
+
+installation
+  # Requires the latest pip
+  pip install --upgrade pip
+
+  # Current stable release for CPU and GPU
+  pip install tensorflow
+
+  pip3 install -U scikit-learn
+
+from keras.optimizers import adam_v2 instead of Adam
+
+Automatically rewrite TF 1.x and compat.v1 API symbols
+tf_upgrade_v2 \
+  --intree  orginal/ \
+  --outtree rewrite/ \
+  --reportfile report.txt
