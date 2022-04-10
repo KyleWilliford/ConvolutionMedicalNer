@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="3.861 12.548 379.344 261.583" xmlns="http://www.w3.org/2000/svg">
+  <g transform="matrix(1, 0, 0, 1, 51.396114, 44.565819)">
+    <g>
+      <g>
+        <g>
+          <g>
+            <line x1="51.5625" y1="177" x2="46.5625" y2="177" style="visibility: inherit;" fill="rgb(0, 0, 0)" stroke="rgb(204, 204, 204)" stroke-width="1px"/>
+            <line x1="51.5625" y1="154.87499999999997" x2="46.5625" y2="154.87499999999997" style="visibility: inherit;" fill="rgb(0, 0, 0)" stroke="rgb(204, 204, 204)" stroke-width="1px"/>
+            <line x1="51.5625" y1="132.75" x2="46.5625" y2="132.75" style="visibility: inherit;" fill="rgb(0, 0, 0)" stroke="rgb(204, 204, 204)" stroke-width="1px"/>
+            <line x1="51.5625" y1="110.625" x2="46.5625" y2="110.625" style="visibility: inherit;" fill="rgb(0, 0, 0)" stroke="rgb(204, 204, 204)" stroke-width="1px"/>
+            <line x1="51.5625" y1="88.49999999999999" x2="46.5625" y2="88.49999999999999" style="visibility: inherit;" fill="rgb(0, 0, 0)" stroke="rgb(204, 204, 204)" stroke-width="1px"/>
+            <line x1="51.5625" y1="66.375" x2="46.5625" y2="66.375" style="visibility: inherit;" fill="rgb(0, 0, 0)" stroke="rgb(204, 204, 204)" stroke-width="1px"/>
+            <line x1="51.5625" y1="44.24999999999998" x2="46.5625" y2="44.24999999999998" style="visibility: inherit;" fill="rgb(0, 0, 0)" stroke="rgb(204, 204, 204)" stroke-width="1px"/>
+            <line x1="51.5625" y1="22.12500000000002" x2="46.5625" y2="22.12500000000002" style="visibility: inherit;" fill="rgb(0, 0, 0)" stroke="rgb(204, 204, 204)" stroke-width="1px"/>
+            <line x1="51.5625" y1="0" x2="46.5625" y2="0" style="visibility: inherit;" fill="rgb(0, 0, 0)" stroke="rgb(204, 204, 204)" stroke-width="1px"/>
+          </g>
+          <g transform="translate(41.5625, 0)">
+            <text x="0" y="177" dx="0em" dy="0.3em" style="text-anchor: end; visibility: hidden; font-family: Roboto, sans-serif; font-size: 12px; font-weight: 200; white-space: pre;" fill="rgb(33, 33, 33)" stroke="none" stroke-width="1px">0.6</text>
+            <text x="0" y="154.87499999999997" dx="0em" dy="0.3em" style="text-anchor: end; visibility: inherit; font-family: Roboto, sans-serif; font-size: 12px; font-weight: 200; white-space: pre;" fill="rgb(33, 33, 33)" stroke="none" stroke-width="1px">0.65</text>
+            <text x="0" y="132.75" dx="0em" dy="0.3em" style="text-anchor: end; visibility: hidden; font-family: Roboto, sans-serif; font-size: 12px; font-weight: 200; white-space: pre;" fill="rgb(33, 33, 33)" stroke="none" stroke-width="1px">0.7</text>
+            <text x="0" y="110.625" dx="0em" dy="0.3em" style="text-anchor: end; visibility: inherit; font-family: Roboto, sans-serif; font-size: 12px; font-weight: 200; white-space: pre;" fill="rgb(33, 33, 33)" stroke="none" stroke-width="1px">0.75</text>
+            <text x="0" y="88.49999999999999" dx="0em" dy="0.3em" style="text-anchor: end; visibility: hidden; font-family: Roboto, sans-serif; font-size: 12px; font-weight: 200; white-space: pre;" fill="rgb(33, 33, 33)" stroke="none" stroke-width="1px">0.8</text>
+            <text x="0" y="66.375" dx="0em" dy="0.3em" style="text-anchor: end; visibility: inherit; font-family: Roboto, sans-serif; font-size: 12px; font-weight: 200; white-space: pre;" fill="rgb(33, 33, 33)" stroke="none" stroke-width="1px">0.85</text>
+            <text x="0" y="44.24999999999998" dx="0em" dy="0.3em" style="text-anchor: end; visibility: hidden; font-family: Roboto, sans-serif; font-size: 12px; font-weight: 200; white-space: pre;" fill="rgb(33, 33, 33)" stroke="none" stroke-width="1px">0.9</text>
+            <text x="0" y="22.12500000000002" dx="0em" dy="0.3em" style="text-anchor: end; visibility: inherit; font-family: Roboto, sans-serif; font-size: 12px; font-weight: 200; white-space: pre;" fill="rgb(33, 33, 33)" stroke="none" stroke-width="1px">0.95</text>
+            <text x="0" y="0" dx="0em" dy="0.3em" style="text-anchor: end; visibility: hidden; font-family: Roboto, sans-serif; font-size: 12px; font-weight: 200; white-space: pre;" fill="rgb(33, 33, 33)" stroke="none" stroke-width="1px">1</text>
+          </g>
+          <line x1="51.5625" y1="0" x2="51.5625" y2="177" fill="rgb(0, 0, 0)" stroke="rgb(204, 204, 204)" stroke-width="1px"/>
+        </g>
+      </g>
+      <g transform="translate(51, 0)" clip-path="url(#clip_0)">
+        <clipPath id="clip_0">
+          <rect width="278" height="177"/>
+        </clipPath>
+        <g>
+          <g>
+            <g>
+              <line x1="0" y1="0" x2="0" y2="177" fill="rgb(0, 0, 0)" stroke="rgb(66, 66, 66)" stroke-width="1px" opacity="0.25"/>
+              <line x1="27.84375" y1="0" x2="27.84375" y2="177" fill="rgb(0, 0, 0)" stroke="rgb(66, 66, 66)" stroke-width="1px" opacity="0.25"/>
+              <line x1="55.6875" y1="0" x2="55.6875" y2="177" fill="rgb(0, 0, 0)" stroke="rgb(66, 66, 66)" stroke-width="1px" opacity="0.25"/>
+              <line x1="83.53125" y1="0" x2="83.53125" y2="177" fill="rgb(0, 0, 0)" stroke="rgb(66, 66, 66)" stroke-width="1px" opacity="0.25"/>
+              <line x1="111.375" y1="0" x2="111.375" y2="177" fill="rgb(0, 0, 0)" stroke="rgb(66, 66, 66)" stroke-width="1px" opacity="0.25"/>
+              <line x1="139.21875" y1="0" x2="139.21875" y2="177" fill="rgb(0, 0, 0)" stroke="rgb(66, 66, 66)" stroke-width="1px" opacity="0.25"/>
+              <line x1="167.0625" y1="0" x2="167.0625" y2="177" fill="rgb(0, 0, 0)" stroke="rgb(66, 66, 66)" stroke-width="1px" opacity="0.25"/>
+              <line x1="194.90625" y1="0" x2="194.90625" y2="177" fill="rgb(0, 0, 0)" stroke="rgb(66, 66, 66)" stroke-width="1px" opacity="0.25"/>
+              <line x1="222.75" y1="0" x2="222.75" y2="177" fill="rgb(0, 0, 0)" stroke="rgb(66, 66, 66)" stroke-width="1px" opacity="0.25"/>
+              <line x1="250.59375" y1="0" x2="250.59375" y2="177" fill="rgb(0, 0, 0)" stroke="rgb(66, 66, 66)" stroke-width="1px" opacity="0.25"/>
+              <line x1="278.4375" y1="0" x2="278.4375" y2="177" fill="rgb(0, 0, 0)" stroke="rgb(66, 66, 66)" stroke-width="1px" opacity="0.25"/>
+            </g>
+            <g>
+              <line x1="0" y1="177" x2="278.4375" y2="177" fill="rgb(0, 0, 0)" stroke="rgb(66, 66, 66)" stroke-width="1px" opacity="0.25"/>
+              <line x1="0" y1="154.87499999999997" x2="278.4375" y2="154.87499999999997" fill="rgb(0, 0, 0)" stroke="rgb(66, 66, 66)" stroke-width="1px" opacity="0.25"/>
+              <line x1="0" y1="132.75" x2="278.4375" y2="132.75" fill="rgb(0, 0, 0)" stroke="rgb(66, 66, 66)" stroke-width="1px" opacity="0.25"/>
+              <line x1="0" y1="110.625" x2="278.4375" y2="110.625" fill="rgb(0, 0, 0)" stroke="rgb(66, 66, 66)" stroke-width="1px" opacity="0.25"/>
+              <line x1="0" y1="88.49999999999999" x2="278.4375" y2="88.49999999999999" fill="rgb(0, 0, 0)" stroke="rgb(66, 66, 66)" stroke-width="1px" opacity="0.25"/>
+              <line x1="0" y1="66.375" x2="278.4375" y2="66.375" fill="rgb(0, 0, 0)" stroke="rgb(66, 66, 66)" stroke-width="1px" opacity="0.25"/>
+              <line x1="0" y1="44.24999999999998" x2="278.4375" y2="44.24999999999998" fill="rgb(0, 0, 0)" stroke="rgb(66, 66, 66)" stroke-width="1px" opacity="0.25"/>
+              <line x1="0" y1="22.12500000000002" x2="278.4375" y2="22.12500000000002" fill="rgb(0, 0, 0)" stroke="rgb(66, 66, 66)" stroke-width="1px" opacity="0.25"/>
+              <line x1="0" y1="0" x2="278.4375" y2="0" fill="rgb(0, 0, 0)" stroke="rgb(66, 66, 66)" stroke-width="1px" opacity="0.25"/>
+            </g>
+          </g>
+        </g>
+        <g>
+          <g>
+            <line x1="0" y1="442.5" x2="278.4375" y2="442.5" fill="rgb(0, 0, 0)" stroke="rgb(153, 153, 153)" stroke-width="1.5px"/>
+          </g>
+        </g>
+        <g>
+          <g>
+            <line x1="0" y1="0" x2="0" y2="177" fill="rgb(0, 0, 0)" stroke="rgb(153, 153, 153)" stroke-width="1.5px"/>
+          </g>
+        </g>
+        <g>
+          <g>
+            <g>
+              <g>
+                <g>
+                  <path stroke="rgb(0, 119, 187)" stroke-width="2px" d="M33.1340625,39.26064133644104L66.268125,39.64403573423618L99.4021875,38.50947437845926L132.53625,38.196866993847124L165.6703125,39.54514060197899" style="fill: none;" fill="none"/>
+                </g>
+                <g>
+                  <path stroke="rgb(187, 187, 187)" stroke-width="2px" d="M33.1340625,25.15133187174797L66.268125,25.2791354991495L99.4021875,26.57019950297413L132.53625,26.388012640835612" style="fill: none;" fill="none"/>
+                </g>
+                <g>
+                  <path stroke="rgb(238, 51, 119)" stroke-width="2px" d="M33.1340625,38.647183924913406L66.268125,38.13596941530709L99.4021875,38.39679314469805L132.53625,40.76718420502458L165.6703125,42.41967489339262" style="fill: none;" fill="none"/>
+                </g>
+                <g>
+                  <path stroke="rgb(51, 187, 238)" stroke-width="2px" d="M33.1340625,33.73960375785822L66.268125,34.12301464006299L99.4021875,34.4490308451409L132.53625,35.626555212828215L165.6703125,34.719443285862326L198.804375,36.53902247101948" style="fill: none;" fill="none"/>
+                </g>
+                <g>
+                  <path stroke="rgb(0, 119, 187)" stroke-width="2px" d="M33.1340625,149.2721839249134L66.268125,149.5277911797166L99.4021875,149.5017088067775L132.53625,151.55757713460312L165.6703125,153.49309622589954" style="fill: none;" fill="none"/>
+                </g>
+                <g>
+                  <path stroke="rgb(0, 153, 136)" stroke-width="2px" d="M33.1340625,27.196163535118103L66.268125,27.323967162519693L99.4021875,26.632797736294403L132.53625,26.797724204576205L165.6703125,27.9461267018674L198.804375,27.631460362435092" style="fill: none;" fill="none"/>
+                </g>
+                <g>
+                  <path stroke="rgb(51, 187, 238)" stroke-width="2px" d="M33.1340625,39.465100765228215L66.268125,40.104118902236166L99.4021875,39.15212574661992L132.53625,40.047730100615034L165.6703125,40.94799889811285" style="fill: none;" fill="none"/>
+                </g>
+                <g>
+                  <path stroke="rgb(204, 51, 17)" stroke-width="2px" d="M33.1340625,33.73960375785822L66.268125,33.73960375785822L99.4021875,33.84393324961464L132.53625,33.889960966565994L165.6703125,34.71164489034392L198.804375,35.93392620345313" style="fill: none;" fill="none"/>
+                </g>
+                <g>
+                  <path stroke="rgb(255, 112, 67)" stroke-width="2px" d="M33.1340625,147.6363238692284L66.268125,144.05787175521257L99.4021875,147.13553961746547L132.53625,151.0305757968522L165.6703125,151.86432833290203" style="fill: none;" fill="none"/>
+                </g>
+                <g>
+                  <path stroke="rgb(0, 119, 187)" stroke-width="2px" d="M33.1340625,27.196163535118103L66.268125,25.79034011811018L99.4021875,25.56864499437566L132.53625,25.940704599351648L165.6703125,25.59833266683793L198.804375,25.668173822365247L231.9384375,25.371333079563673" style="fill: none;" fill="none"/>
+                </g>
+                <g>
+                  <path stroke="rgb(187, 187, 187)" stroke-width="2px" d="M33.1340625,39.87407237291336L66.268125,38.08485455811024L99.4021875,37.85012329415397L132.53625,37.84052651813808L165.6703125,37.56957021823038L198.804375,38.27910260872557L231.9384375,38.767164480130035L265.0725,40.54853588085744" style="fill: none;" fill="none"/>
+                </g>
+                <g>
+                  <path stroke="rgb(0, 153, 136)" stroke-width="2px" d="M33.1340625,33.94408956170082L66.268125,33.56067867949605L99.4021875,33.54763749302648L132.53625,33.91777705017697L165.6703125,33.485734845245965L198.804375,34.02122740900883L231.9384375,35.083411712542016" style="fill: none;" fill="none"/>
+                </g>
+                <g>
+                  <path stroke="rgb(51, 187, 238)" stroke-width="2px" d="M33.1340625,145.18252059817317L66.268125,147.2273456677794L99.4021875,145.03647007504287L132.53625,147.45288390501898L165.6703125,148.68540587936488L198.804375,149.44637631335237" style="fill: none;" fill="none"/>
+                </g>
+                <g>
+                  <path stroke="rgb(255, 112, 67)" stroke-width="2px" d="M33.1340625,25.764789283275604L66.268125,25.125787630677223L99.4021875,25.45180888200286L132.53625,25.31372202067253L165.6703125,24.888536824090558L198.804375,25.513582923174425L231.9384375,25.785259310402516" style="fill: none;" fill="none"/>
+                </g>
+                <g>
+                  <path stroke="rgb(0, 153, 136)" stroke-width="2px" d="M33.1340625,36.39786645770073L66.268125,36.65347371250391L99.4021875,37.87933178398069L132.53625,37.1985113215359L165.6703125,37.20601407636548" style="fill: none;" fill="none"/>
+                </g>
+                <g>
+                  <path stroke="rgb(238, 51, 119)" stroke-width="2px" d="M33.1340625,34.148575365543365L66.268125,34.14857536554331L99.4021875,34.35722089239529L132.53625,34.35530925498291L165.6703125,34.709086473371976L198.804375,34.73129039080102L231.9384375,34.996380588866565L265.0725,35.31698748656212" style="fill: none;" fill="none"/>
+                </g>
+                <g>
+                  <path stroke="rgb(204, 51, 17)" stroke-width="2px" d="M33.1340625,142.1152862906456L66.268125,143.39330608025193L99.4021875,143.5758776445778L132.53625,143.7503971783992L165.6703125,147.47568389510712L198.804375,148.22945169762383L231.9384375,149.16344582576522" style="fill: none;" fill="none"/>
+                </g>
+              </g>
+            </g>
+          </g>
+          <g opacity="0.2">
+            <g>
+              <g>
+                <g>
+                  <path stroke="rgb(0, 119, 187)" stroke-width="2px" d="M33.1340625,39.26064133644104L66.268125,39.87407237291336L99.4021875,37.42029547691345L132.53625,37.82924070954323L165.6703125,41.30544662475586" style="fill: none;" fill="none"/>
+                </g>
+                <g>
+                  <path stroke="rgb(187, 187, 187)" stroke-width="2px" d="M33.1340625,25.15133187174797L66.268125,25.355817675590515L99.4021875,27.809620946645737L132.53625,26.173760890960693" style="fill: none;" fill="none"/>
+                </g>
+                <g>
+                  <path stroke="rgb(238, 51, 119)" stroke-width="2px" d="M33.1340625,38.647183924913406L66.268125,37.82924070954323L99.4021875,38.647183924913406L132.53625,43.554764091968536L165.6703125,44.577166736125946" style="fill: none;" fill="none"/>
+                </g>
+                <g>
+                  <path stroke="rgb(51, 187, 238)" stroke-width="2px" d="M33.1340625,33.739603757858276L66.268125,34.35306116938591L99.4021875,34.762006402015686L132.53625,37.01132386922836L165.6703125,33.53511795401573L198.804375,39.056155532598495" style="fill: none;" fill="none"/>
+                </g>
+                <g>
+                  <path stroke="rgb(0, 119, 187)" stroke-width="2px" d="M33.1340625,149.2721839249134L66.268125,149.6811555325985L99.4021875,149.47666972875595L132.53625,153.975278288126L165.6703125,156.02010995149612" style="fill: none;" fill="none"/>
+                </g>
+                <g>
+                  <path stroke="rgb(0, 153, 136)" stroke-width="2px" d="M33.1340625,27.196163535118103L66.268125,27.400649338960648L99.4021875,25.96927508711815L132.53625,26.99167773127556L165.6703125,29.44548100233078L198.804375,27.196163535118103" style="fill: none;" fill="none"/>
+                </g>
+                <g>
+                  <path stroke="rgb(51, 187, 238)" stroke-width="2px" d="M33.1340625,39.46510076522827L66.268125,40.487529784440994L99.4021875,38.23821231722832L132.53625,41.100960820913315L165.6703125,42.12338984012604" style="fill: none;" fill="none"/>
+                </g>
+                <g>
+                  <path stroke="rgb(204, 51, 17)" stroke-width="2px" d="M33.1340625,33.739603757858276L66.268125,33.739603757858276L99.4021875,33.94408956170082L132.53625,33.94408956170082L165.6703125,35.78443542122841L198.804375,37.624781280756" style="fill: none;" fill="none"/>
+                </g>
+                <g>
+                  <path stroke="rgb(255, 112, 67)" stroke-width="2px" d="M33.1340625,147.63632386922836L66.268125,141.91080048680305L99.4021875,150.09010076522827L132.53625,155.61113834381104L165.6703125,152.95287564396858" style="fill: none;" fill="none"/>
+                </g>
+                <g>
+                  <path stroke="rgb(0, 119, 187)" stroke-width="2px" d="M33.1340625,27.196163535118103L66.268125,24.946846067905426L99.4021875,25.355817675590515L132.53625,26.378246694803238L165.6703125,25.15133187174797L198.804375,25.764789283275604L231.9384375,24.946846067905426" style="fill: none;" fill="none"/>
+                </g>
+                <g>
+                  <path stroke="rgb(187, 187, 187)" stroke-width="2px" d="M33.1340625,39.87407237291336L66.268125,37.01132386922836L99.4021875,37.624781280756L132.53625,37.82924070954323L165.6703125,37.21580967307091L198.804375,39.26064133644104L231.9384375,39.46510076522827L265.0725,43.14579248428345" style="fill: none;" fill="none"/>
+                </g>
+                <g>
+                  <path stroke="rgb(0, 153, 136)" stroke-width="2px" d="M33.1340625,33.94408956170082L66.268125,33.33063215017319L99.4021875,33.53511795401573L132.53625,34.35306116938591L165.6703125,32.9216605424881L198.804375,34.762006402015686L231.9384375,36.602352261543274" style="fill: none;" fill="none"/>
+                </g>
+                <g>
+                  <path stroke="rgb(51, 187, 238)" stroke-width="2px" d="M33.1340625,145.18252059817314L66.268125,148.45424070954323L99.4021875,142.93322950601578L132.53625,150.29458656907082L165.6703125,150.29458656907082L198.804375,150.49907237291336" style="fill: none;" fill="none"/>
+                </g>
+                <g>
+                  <path stroke="rgb(255, 112, 67)" stroke-width="2px" d="M33.1340625,25.764789283275604L66.268125,24.742386639118195L99.4021875,25.764789283275604L132.53625,25.15133187174797L165.6703125,24.333415031433105L198.804375,26.378246694803238L231.9384375,26.173760890960693" style="fill: none;" fill="none"/>
+                </g>
+                <g>
+                  <path stroke="rgb(0, 153, 136)" stroke-width="2px" d="M33.1340625,36.39786645770073L66.268125,36.80683806538582L99.4021875,39.056155532598495L132.53625,36.39786645770073L165.6703125,37.21580967307091" style="fill: none;" fill="none"/>
+                </g>
+                <g>
+                  <path stroke="rgb(238, 51, 119)" stroke-width="2px" d="M33.1340625,34.148575365543365L66.268125,34.148575365543365L99.4021875,34.55752059817314L132.53625,34.35306116938591L165.6703125,35.170978009700775L198.804375,34.762006402015686L231.9384375,35.37546381354332L265.0725,35.78443542122841" style="fill: none;" fill="none"/>
+                </g>
+                <g>
+                  <path stroke="rgb(204, 51, 17)" stroke-width="2px" d="M33.1340625,142.1152862906456L66.268125,144.16011795401573L99.4021875,143.75114634633064L132.53625,143.9556321501732L165.6703125,152.33941823244095L198.804375,149.2721839249134L231.9384375,150.49907237291336" style="fill: none;" fill="none"/>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+      <g transform="translate(51, 177)" clip-path="url(#clip_1)">
+        <clipPath id="clip_1">
+          <rect width="278" height="23"/>
+        </clipPath>
+        <g>
+          <g>
+            <line x1="0" y1="0" x2="0" y2="5" style="visibility: inherit;" fill="rgb(0, 0, 0)" stroke="rgb(204, 204, 204)" stroke-width="1px"/>
+            <line x1="27.84375" y1="0" x2="27.84375" y2="5" style="visibility: inherit;" fill="rgb(0, 0, 0)" stroke="rgb(204, 204, 204)" stroke-width="1px"/>
+            <line x1="55.6875" y1="0" x2="55.6875" y2="5" style="visibility: inherit;" fill="rgb(0, 0, 0)" stroke="rgb(204, 204, 204)" stroke-width="1px"/>
+            <line x1="83.53125" y1="0" x2="83.53125" y2="5" style="visibility: inherit;" fill="rgb(0, 0, 0)" stroke="rgb(204, 204, 204)" stroke-width="1px"/>
+            <line x1="111.375" y1="0" x2="111.375" y2="5" style="visibility: inherit;" fill="rgb(0, 0, 0)" stroke="rgb(204, 204, 204)" stroke-width="1px"/>
+            <line x1="139.21875" y1="0" x2="139.21875" y2="5" style="visibility: inherit;" fill="rgb(0, 0, 0)" stroke="rgb(204, 204, 204)" stroke-width="1px"/>
+            <line x1="167.0625" y1="0" x2="167.0625" y2="5" style="visibility: inherit;" fill="rgb(0, 0, 0)" stroke="rgb(204, 204, 204)" stroke-width="1px"/>
+            <line x1="194.90625" y1="0" x2="194.90625" y2="5" style="visibility: inherit;" fill="rgb(0, 0, 0)" stroke="rgb(204, 204, 204)" stroke-width="1px"/>
+            <line x1="222.75" y1="0" x2="222.75" y2="5" style="visibility: inherit;" fill="rgb(0, 0, 0)" stroke="rgb(204, 204, 204)" stroke-width="1px"/>
+            <line x1="250.59375" y1="0" x2="250.59375" y2="5" style="visibility: inherit;" fill="rgb(0, 0, 0)" stroke="rgb(204, 204, 204)" stroke-width="1px"/>
+            <line x1="278.4375" y1="0" x2="278.4375" y2="5" style="visibility: inherit;" fill="rgb(0, 0, 0)" stroke="rgb(204, 204, 204)" stroke-width="1px"/>
+          </g>
+          <g transform="translate(0, 8)">
+            <text x="0" y="0" dx="0em" dy="0.95em" style="text-anchor: middle; visibility: hidden; font-family: Roboto, sans-serif; font-size: 12px; font-weight: 200; white-space: pre;" fill="rgb(33, 33, 33)" stroke="none" stroke-width="1px">0</text>
+            <text x="27.84375" y="0" dx="0em" dy="0.95em" style="text-anchor: middle; visibility: inherit; font-family: Roboto, sans-serif; font-size: 12px; font-weight: 200; white-space: pre;" fill="rgb(33, 33, 33)" stroke="none" stroke-width="1px">100</text>
+            <text x="55.6875" y="0" dx="0em" dy="0.95em" style="text-anchor: middle; visibility: inherit; font-family: Roboto, sans-serif; font-size: 12px; font-weight: 200; white-space: pre;" fill="rgb(33, 33, 33)" stroke="none" stroke-width="1px">200</text>
+            <text x="83.53125" y="0" dx="0em" dy="0.95em" style="text-anchor: middle; visibility: inherit; font-family: Roboto, sans-serif; font-size: 12px; font-weight: 200; white-space: pre;" fill="rgb(33, 33, 33)" stroke="none" stroke-width="1px">300</text>
+            <text x="111.375" y="0" dx="0em" dy="0.95em" style="text-anchor: middle; visibility: inherit; font-family: Roboto, sans-serif; font-size: 12px; font-weight: 200; white-space: pre;" fill="rgb(33, 33, 33)" stroke="none" stroke-width="1px">400</text>
+            <text x="139.21875" y="0" dx="0em" dy="0.95em" style="text-anchor: middle; visibility: inherit; font-family: Roboto, sans-serif; font-size: 12px; font-weight: 200; white-space: pre;" fill="rgb(33, 33, 33)" stroke="none" stroke-width="1px">500</text>
+            <text x="167.0625" y="0" dx="0em" dy="0.95em" style="text-anchor: middle; visibility: inherit; font-family: Roboto, sans-serif; font-size: 12px; font-weight: 200; white-space: pre;" fill="rgb(33, 33, 33)" stroke="none" stroke-width="1px">600</text>
+            <text x="194.90625" y="0" dx="0em" dy="0.95em" style="text-anchor: middle; visibility: inherit; font-family: Roboto, sans-serif; font-size: 12px; font-weight: 200; white-space: pre;" fill="rgb(33, 33, 33)" stroke="none" stroke-width="1px">700</text>
+            <text x="222.75" y="0" dx="0em" dy="0.95em" style="text-anchor: middle; visibility: inherit; font-family: Roboto, sans-serif; font-size: 12px; font-weight: 200; white-space: pre;" fill="rgb(33, 33, 33)" stroke="none" stroke-width="1px">800</text>
+            <text x="250.59375" y="0" dx="0em" dy="0.95em" style="text-anchor: middle; visibility: inherit; font-family: Roboto, sans-serif; font-size: 12px; font-weight: 200; white-space: pre;" fill="rgb(33, 33, 33)" stroke="none" stroke-width="1px">900</text>
+            <text x="278.4375" y="0" dx="0em" dy="0.95em" style="text-anchor: middle; visibility: hidden; font-family: Roboto, sans-serif; font-size: 12px; font-weight: 200; white-space: pre;" fill="rgb(33, 33, 33)" stroke="none" stroke-width="1px">1k</text>
+          </g>
+          <line x1="0" y1="0" x2="278.4375" y2="0" fill="rgb(0, 0, 0)" stroke="rgb(204, 204, 204)" stroke-width="1px"/>
+        </g>
+      </g>
+    </g>
+  </g>
+  <text style="white-space: pre; fill: rgb(51, 51, 51); font-family: Arial, sans-serif; font-size: 13.5px;" x="214.768" y="268.822">Iterations</text>
+  <text style="white-space: pre; fill: rgb(51, 51, 51); font-family: Arial, sans-serif; font-size: 13.5px;" x="7.722" y="138.513">Accuracy</text>
+  <text style="white-space: pre; fill: rgb(51, 51, 51); font-family: Arial, sans-serif; font-size: 13.5px;" x="178.571" y="29.44">Accuracy vs Iterations</text>
+</svg>
