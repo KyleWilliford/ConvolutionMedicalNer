@@ -109,3 +109,9 @@ tf_upgrade_v2 \
   --intree  orginal/ \
   --outtree rewrite/ \
   --reportfile report.txt
+
+===============================================================================
+
+08-Multimodal-Baseline.ipynb
+
+The model should be train with 3 different embedding, but the code only use ner_word2vec[k].

@@ -3,8 +3,8 @@ import pandas as pd
 import os
 import numpy as np
 from gensim.models import Word2Vec, FastText
-import glove
-from glove import Corpus
+# import glove
+# from glove import Corpus
 
 import collections
 import gc 
@@ -17,7 +17,7 @@ from keras.layers import Flatten, Dense, Dropout, Input, concatenate, merge, Act
 from keras.layers import Input, Conv2D, MaxPooling2D, UpSampling2D, Conv1D, BatchNormalization, GRU, Convolution1D, LSTM
 from keras.layers import UpSampling1D, MaxPooling1D, GlobalMaxPooling1D, GlobalAveragePooling1D,MaxPool1D, merge
 
-from keras.optimizers import Adam
+from tensorflow.keras.optimizers import Adam
 
 from keras.callbacks import EarlyStopping, ModelCheckpoint, History, ReduceLROnPlateau
 from keras.utils import np_utils
@@ -52,6 +52,19 @@ dev_ids = pd.read_pickle("data/"+type_of_ner+"_dev_ids.pkl")
 test_ids = pd.read_pickle("data/"+type_of_ner+"_test_ids.pkl")
 
 # %%
+def reset_keras(model):
+    sess = get_session()
+    clear_session()
+    sess.close()
+    sess = get_session()
+
+    try:
+        del model # this is from global space - change this as you need
+    except:
+        pass
+
+    gc.collect() # if it's done something you should see a number being outputted
+
 def make_prediction_cnn(model, test_data):
     probs = model.predict(test_data)
     y_pred = [1 if i>=0.5 else 0 for i in probs]
@@ -74,7 +87,7 @@ def save_scores_cnn(predictions, probs, ground_truth,
     result_dict['acc'] = acc
     result_dict['F1'] = F1
 
-    result_path = "results/cnn/"
+    result_path = "results/09-cnn/"
     file_name = str(sequence_name)+"-"+str(hidden_unit_size)+"-"+embed_name
     file_name = file_name +"-"+problem_type+"-"+str(iteration)+"-"+type_of_ner+"-cnn-.p"
     pd.to_pickle(result_dict, os.path.join(result_path, file_name))

@@ -17,7 +17,7 @@ from keras.layers import Flatten, Dense, Dropout, Input, concatenate, merge, Act
 from keras.layers import Input, Conv2D, MaxPooling2D, UpSampling2D, Conv1D, BatchNormalization, GRU, Convolution1D, LSTM
 from keras.layers import UpSampling1D, MaxPooling1D, GlobalMaxPooling1D, GlobalAveragePooling1D,MaxPool1D, merge
 
-from keras.optimizers import adam_v2
+from tensorflow.keras.optimizers import Adam
 
 from keras.callbacks import EarlyStopping, ModelCheckpoint, History, ReduceLROnPlateau
 from keras.utils import np_utils
@@ -32,6 +32,19 @@ import warnings
 warnings.filterwarnings('ignore')
 
 # %%
+def reset_keras(model):
+    sess = get_session()
+    clear_session()
+    sess.close()
+    sess = get_session()
+
+    try:
+        del model # this is from global space - change this as you need
+    except:
+        pass
+
+    gc.collect() # if it's done something you should see a number being outputted
+
 def create_dataset(dict_of_ner):
     temp_data = []
     for k, v in sorted(dict_of_ner.items()):
@@ -63,7 +76,7 @@ def save_scores_multi_avg(predictions, probs, ground_truth,
     result_dict['acc'] = acc
     result_dict['F1'] = F1
     
-    result_path = "../results/"
+    result_path = "results/08-multimodal"
     file_name = str(sequence_name)+"-"+str(hidden_unit_size)+"-"+embed_name
     file_name = file_name +"-"+problem_type+"-"+str(iteration)+"-"+type_of_ner+"-avg-.p"
     pd.to_pickle(result_dict, os.path.join(result_path, file_name))
@@ -101,7 +114,7 @@ def avg_ner_model(layer_name, number_of_unit, embedding_name):
                   kernel_regularizer=logits_regularizer)(x)
     
     
-    opt = adam_v2(lr=0.001, decay = 0.01)
+    opt = Adam(lr=0.001, decay = 0.01)
     model = Model(inputs=[sequence_input, input_avg], outputs=preds)
     model.compile(loss='binary_crossentropy',
                   optimizer=opt,
@@ -123,27 +136,16 @@ y_test = pd.read_pickle("data/"+type_of_ner+"_y_test.pkl")
 ner_word2vec = pd.read_pickle("data/"+type_of_ner+"_ner_word2vec_limited_dict.pkl")
 ner_fasttext = pd.read_pickle("data/"+type_of_ner+"_ner_fasttext_limited_dict.pkl")
 ner_concat = pd.read_pickle("data/"+type_of_ner+"_ner_combined_limited_dict.pkl")
+print(f"new wrod2vec, fasttext, concat lengths = {len(ner_word2vec)}, {len(ner_fasttext)}, {len(ner_concat)}")
 
-Ys =  pd.read_pickle("data/Ys.pkl")
-Ys_train =  pd.read_pickle("data/Ys_train.pkl")
-Ys_dev =  pd.read_pickle("data/Ys_dev.pkl")
-Ys_test =  pd.read_pickle("data/Ys_test.pkl")
-all_train_ids = set()
-for i in Ys_train.itertuples():
-    all_train_ids.add( i.Index[0] )
-all_dev_ids = set()
-for i in Ys_dev.itertuples():
-    all_dev_ids.add( i.Index[0] )
-all_test_ids = set()
-for i in Ys_test.itertuples():
-    all_test_ids.add( i.Index[0] )
-new_word2vec_dict = pd.read_pickle("data/"+"new_ner"+"_word2vec_limited_dict.pkl")
-new_word2vec_dict = pd.read_pickle("../data/new_ner_word2vec_dict.pkl")
-new_keys = set(new_word2vec_dict.keys())
-new_train_ids = sorted(all_train_ids.intersection(new_keys))
-new_dev_ids = sorted(all_dev_ids.intersection(new_keys))
-new_test_ids = sorted(all_test_ids.intersection(new_keys))
-
+train_ids = pd.read_pickle("data/"+type_of_ner+"_train_ids.pkl")
+dev_ids = pd.read_pickle("data/"+type_of_ner+"_dev_ids.pkl")
+test_ids = pd.read_pickle("data/"+type_of_ner+"_test_ids.pkl")
+new_keys = set(ner_word2vec.keys())
+train_ids = sorted(set(train_ids).intersection(new_keys))
+dev_ids = sorted(set(dev_ids).intersection(new_keys))
+test_ids = sorted(set(test_ids).intersection(new_keys))
+print(f"new train, dev, test lengths = {len(train_ids)}, {len(dev_ids)}, {len(test_ids)}, total = {len(train_ids)+len(dev_ids)+len(test_ids)}")
 # %%
 embedding_types = ['word2vec', 'fasttext', 'concat']
 embedding_dict = [ner_word2vec, ner_fasttext, ner_concat]
@@ -168,9 +170,9 @@ for each_layer in layers:
             print ("Embedding: ", embed_name)
             print("=============================")
 
-            temp_train_ner = dict((k, ner_word2vec[k]) for k in train_ids)
-            temp_dev_ner = dict((k, ner_word2vec[k]) for k in dev_ids)
-            temp_test_ner = dict((k, ner_word2vec[k]) for k in test_ids)
+            temp_train_ner = dict((k, embed_dict[k]) for k in train_ids)
+            temp_dev_ner = dict((k, embed_dict[k]) for k in dev_ids)
+            temp_test_ner = dict((k, embed_dict[k]) for k in test_ids)
 
             x_train_ner = create_dataset(temp_train_ner)
             x_dev_ner = create_dataset(temp_dev_ner)

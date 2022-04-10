@@ -69,7 +69,7 @@ def save_scores_timeseries(predictions, probs, ground_truth, model_name,
         
     file_name = str(hidden_unit_size)+"-"+model_name+"-"+problem_type+"-"+str(iteration)+"-"+type_of_ner+".p"
     
-    result_path = "../results/"
+    result_path = "../results/07-baseline"
     pd.to_pickle(result_dict, os.path.join(result_path, file_name))
 
     print(auc, auprc, acc, F1)
