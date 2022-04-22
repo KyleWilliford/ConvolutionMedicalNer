@@ -88,8 +88,7 @@ def save_scores_cnn(predictions, probs, ground_truth,
     result_dict['F1'] = F1
 
     result_path = "results/09-cnn/"
-    file_name = str(sequence_name)+"-"+str(hidden_unit_size)+"-"+embed_name
-    file_name = file_name +"-"+problem_type+"-"+str(iteration)+"-"+type_of_ner+"-cnn-.p"
+    file_name = str(sequence_name)+"-"+str(hidden_unit_size)+"-"+embed_name +"-"+problem_type+"-"+str(iteration)+"-"+type_of_ner+"-cnn-.p"
     pd.to_pickle(result_dict, os.path.join(result_path, file_name))
 
     print(auc, auprc, acc, F1)
@@ -165,7 +164,8 @@ def proposedmodel(layer_name, number_of_unit, embedding_name, ner_limit, num_fil
         x = LSTM(number_of_unit)(sequence_input)
 
     #concatenated = keras.layers.Concatenate()([x, text_embeddings])
-    concatenated = merge([x, text_embeddings], mode='concat', concat_axis=1)
+    # concatenated = merge([x, text_embeddings], mode='concat', concat_axis=1)
+    concatenated = tf.keras.layers.Concatenate(axis=1)([x, text_embeddings])
 
     concatenated = Dense(512, activation='relu')(concatenated)
     concatenated = Dropout(0.2)(concatenated)
@@ -233,9 +233,9 @@ for embed_dict, embed_name in zip(embedding_dict, embedding_types):
     x_dev_dict_sorted = collections.OrderedDict(sorted(x_dev_dict.items()))
     x_test_dict_sorted = collections.OrderedDict(sorted(x_test_dict.items()))
 
-    x_train_ner = np.asarray(x_train_dict_sorted.values())
-    x_dev_ner = np.asarray(x_dev_dict_sorted.values())
-    x_test_ner = np.asarray(x_test_dict_sorted.values())
+    x_train_ner = np.asarray(list(x_train_dict_sorted.values()))
+    x_dev_ner = np.asarray(list(x_dev_dict_sorted.values()))
+    x_test_ner = np.asarray(list(x_test_dict_sorted.values()))
         
     for iteration in range(1,maxiter):
         print ("Iteration number: ", iteration)

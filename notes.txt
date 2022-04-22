@@ -115,3 +115,20 @@ tf_upgrade_v2 \
 08-Multimodal-Baseline.ipynb
 
 The model should be train with 3 different embedding, but the code only use ner_word2vec[k].
+
+===============================================================================
+
+09-Proposed-Model.ipynb
+
+add list() to x_train_ner, x_dev_ner, x_test_ner.
+
+===============================================================================
+
+Add new summary step.
+
+10-summary.ipynb
+
+===============================================================================
+
+Other note for whole project.
+- All notebook format is not ideal. There are many unused packages and functions imported. 
