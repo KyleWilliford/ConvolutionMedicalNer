@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<svg viewBox="0 10.618 742.76 240.829" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 -4.253 742.76 257.656" xmlns="http://www.w3.org/2000/svg">
   <g transform="matrix(1, 0, 0, 1, 47.105476, 30.280081)">
     <g>
       <g>
@@ -466,4 +466,5 @@
   <text style="white-space: pre; fill: rgb(51, 51, 51); font-family: Arial, sans-serif; font-size: 13.5px;" x="391.945" y="118.967">Loss</text>
   <text style="white-space: pre; fill: rgb(51, 51, 51); font-family: Arial, sans-serif; font-size: 13.5px;" x="575.342" y="245.415">Iterations</text>
   <text style="white-space: pre; fill: rgb(51, 51, 51); font-family: Arial, sans-serif; font-size: 13.5px;" x="539.145" y="25.338">Loss vs Iterations</text>
+  <text style="white-space: pre; fill: rgb(51, 51, 51); font-family: Arial, sans-serif; font-size: 11px;" x="383.903" y="-0.731" transform="matrix(1, 0, 0, 1, -9.783456, 10.174794)">Development Set<tspan x="383.90301513671875" dy="1em">​</tspan></text>
 </svg>

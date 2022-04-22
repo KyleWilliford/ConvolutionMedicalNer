@@ -55,9 +55,7 @@ $ pip install --upgrade pip
 
 0. Run `03-Prprocess-Clinical-Notes.ipnyb` to prepocess clinical notes.
 
-The following steps can be run with `python` instead of a Jupyter Notebook.
-
-7. Run `rewrite/04-Apply-med7-on-Clinical-Notes.py` to extract medical entities. 
+0. Run `rewrite/04-Apply-med7-on-Clinical-Notes.py` to extract medical entities. 
 
 0. Run `rewrite/05-Represent-Entities-With-Different-Embeddings.py` to convert medical entities into word representations.
 
@@ -68,6 +66,8 @@ The following steps can be run with `python` instead of a Jupyter Notebook.
 0. Run `rewrite/08-Multimodal-Baseline.py` to run multimodal baseline to predict 4 different clinical tasks.
 
 0. Run `rewrite/09-Proposed-Model.py` to run proposed model to predict 4 different clinical tasks.
+
+0. Run `rewrite/10-summary.ipynb` to print evaluation metrics for the models
 
 ## References
 

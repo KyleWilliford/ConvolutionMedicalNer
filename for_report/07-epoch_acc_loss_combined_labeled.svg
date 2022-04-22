@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<svg viewBox="1.83 3.202 759.378 266.24" xmlns="http://www.w3.org/2000/svg">
-  <g transform="matrix(1, 0, 0, 1, 53.132446, 36.964245)">
+<svg viewBox="81.564 0 756.274 261.1" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <path id="path-0" style="fill: none;" d="M 449.807 9.706 C 462.336 9.706 469.747 11.637 477.317 11.637 C 486.893 15.178 495.087 17.889 502.896 19.841 C 506.55 20.324 508.899 20.807 511.583 20.807 L 512.066 20.807 C 512.387 20.807 512.709 20.807 513.031 20.807"/>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 129.388643, 39.384432)">
     <g>
       <g>
         <g>
@@ -323,10 +326,10 @@
       </g>
     </g>
   </g>
-  <text style="white-space: pre; fill: rgb(51, 51, 51); font-family: Arial, sans-serif; font-size: 12.8px;" x="198.616" y="30.6">Epoch Accuracy</text>
-  <text style="white-space: pre; fill: rgb(51, 51, 51); font-family: Arial, sans-serif; font-size: 12.8px;" x="239.25" y="257.548" transform="matrix(1, 0, 0, 1, -6.781904, -1.879607)">Epoch<tspan x="239.25" dy="1em">​</tspan></text>
-  <text style="white-space: pre; fill: rgb(51, 51, 51); font-family: Arial, sans-serif; font-size: 12.8px;" x="7.857" y="123.007">Accuracy</text>
-  <g transform="matrix(1, 0, 0, 1, 422.716522, 34.128124)">
+  <text style="white-space: pre; fill: rgb(51, 51, 51); font-family: Arial, sans-serif; font-size: 12.8px;" x="282.112" y="31.572">Epoch Accuracy</text>
+  <text style="white-space: pre; fill: rgb(51, 51, 51); font-family: Arial, sans-serif; font-size: 12.8px;" x="239.25" y="257.548" transform="matrix(1, 0, 0, 1, 60.787037, -5.250926)">Epoch x10<tspan x="239.25" dy="1em">​</tspan></text>
+  <text style="white-space: pre; fill: rgb(51, 51, 51); font-family: Arial, sans-serif; font-size: 12.8px;" x="7.857" y="123.007" transform="matrix(1, 0, 0, 1, 76.256197, 2.420187)">Accuracy</text>
+  <g transform="matrix(1, 0, 0, 1, 498.972719, 36.548311)">
     <g>
       <g>
         <g>
@@ -661,7 +664,8 @@
       </g>
     </g>
   </g>
-  <text style="white-space: pre; fill: rgb(51, 51, 51); font-family: Arial, sans-serif; font-size: 13.5px;" x="570.471" y="27.761">Epoch Loss</text>
-  <text style="white-space: pre; fill: rgb(51, 51, 51); font-family: Arial, sans-serif; font-size: 13.5px;" x="401.768" y="125.277">Loss</text>
-  <text style="white-space: pre; fill: rgb(51, 51, 51); font-family: Arial, sans-serif; font-size: 13.5px;" x="578.782" y="254.947">Epoch x10</text>
+  <text style="white-space: pre; fill: rgb(51, 51, 51); font-family: Arial, sans-serif; font-size: 13.5px;" x="664.102" y="29.699">Epoch Loss</text>
+  <text style="white-space: pre; fill: rgb(51, 51, 51); font-family: Arial, sans-serif; font-size: 13.5px;" x="401.768" y="125.277" transform="matrix(1, 0, 0, 1, 76.256197, 2.420187)">Loss</text>
+  <text style="white-space: pre; fill: rgb(51, 51, 51); font-family: Arial, sans-serif; font-size: 13.5px;" x="671.93" y="250.61">Epoch x10</text>
+  <text style="white-space: pre; fill: rgb(51, 51, 51); font-family: Arial, sans-serif; font-size: 13.5px;" x="460.425" y="16.462">Training Set</text>
 </svg>
