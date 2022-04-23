@@ -1,0 +1,21 @@
+task,model_category,layer,embedding,auc,auprc,F1
+In-Hospital Mortality,Average Moltimodal,,concat,88.01 +/- 0.128,59.11 +/- 0.362,48.13 +/- 0.435
+In-Hospital Mortality,Average Moltimodal,,fasttext,87.83 +/- 0.152,58.58 +/- 0.822,47.05 +/- 2.454
+In-Hospital Mortality,Average Moltimodal,,word2vec,87.94 +/- 0.113,58.79 +/- 0.747,47.97 +/- 1.138
+In-Hospital Mortality,GRU,GRU,,87.58 +/- 0.503,56.18 +/- 1.023,44.94 +/- 1.956
+In-Hospital Mortality,GRU,LSTM,,87.49 +/- 0.411,55.21 +/- 0.930,41.75 +/- 2.426
+In-ICU Mortality,Average Moltimodal,,concat,88.72 +/- 0.108,51.69 +/- 0.058,43.44 +/- 2.591
+In-ICU Mortality,Average Moltimodal,,fasttext,88.35 +/- 0.278,51.06 +/- 0.157,39.35 +/- 0.664
+In-ICU Mortality,Average Moltimodal,,word2vec,89.04 +/- 0.058,52.93 +/- 0.028,44.81 +/- 0.302
+In-ICU Mortality,GRU,GRU,,88.57 +/- 0.404,51.68 +/- 1.101,43.59 +/- 2.232
+In-ICU Mortality,GRU,LSTM,,88.34 +/- 0.415,50.38 +/- 1.174,40.89 +/- 2.595
+LOS > 3 Days,Average Moltimodal,,concat,70.14 +/- 0.430,64.25 +/- 0.709,55.26 +/- 1.272
+LOS > 3 Days,Average Moltimodal,,fasttext,70.01 +/- 0.110,63.58 +/- 0.155,56.58 +/- 0.028
+LOS > 3 Days,Average Moltimodal,,word2vec,70.27 +/- 0.233,63.97 +/- 0.536,55.19 +/- 1.603
+LOS > 3 Days,GRU,GRU,,69.56 +/- 0.336,64.01 +/- 0.320,55.25 +/- 1.528
+LOS > 3 Days,GRU,LSTM,,69.11 +/- 0.546,63.29 +/- 0.627,54.43 +/- 1.080
+LOS > 7 Days,Average Moltimodal,,concat,71.87 +/- 0.098,21.54 +/- 0.391,3.82 +/- 0.743
+LOS > 7 Days,Average Moltimodal,,fasttext,72.84 +/- 0.922,21.69 +/- 0.309,3.84 +/- 1.565
+LOS > 7 Days,Average Moltimodal,,word2vec,72.41 +/- 0.870,21.52 +/- 0.652,1.94 +/- 1.146
+LOS > 7 Days,GRU,GRU,,73.30 +/- 0.717,21.08 +/- 0.743,4.63 +/- 1.884
+LOS > 7 Days,GRU,LSTM,,72.45 +/- 0.589,19.68 +/- 0.864,2.99 +/- 1.777

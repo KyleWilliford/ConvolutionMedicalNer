@@ -1,0 +1,17 @@
+task,model_category,embedding,auc,auprc,F1
+LOS > 7 Days,Proposed Model,word2vec,73.34 +/- 0.265,22.47 +/- 0.642,2.42 +/- 1.633
+LOS > 7 Days,Proposed Model,fasttext,72.62 +/- 0.748,22.15 +/- 0.628,2.46 +/- 1.791
+LOS > 7 Days,Proposed Model,concat,72.65 +/- 0.357,22.26 +/- 0.744,2.38 +/- 0.851
+LOS > 7 Days,Best Baseline,,73.30 +/- 0.717,21.69 +/- 0.309,4.63 +/- 1.884
+LOS > 3 Days,Proposed Model,word2vec,70.05 +/- 0.227,64.45 +/- 0.451,55.42 +/- 1.277
+LOS > 3 Days,Proposed Model,fasttext,69.83 +/- 0.245,63.94 +/- 0.301,55.02 +/- 1.653
+LOS > 3 Days,Proposed Model,concat,69.91 +/- 0.347,64.26 +/- 0.371,55.44 +/- 1.326
+LOS > 3 Days,Best Baseline,,70.27 +/- 0.233,64.25 +/- 0.709,56.58 +/- 0.028
+In-ICU Mortality,Proposed Model,word2vec,88.62 +/- 0.301,52.33 +/- 0.381,43.22 +/- 1.883
+In-ICU Mortality,Proposed Model,fasttext,88.44 +/- 0.315,51.67 +/- 1.007,41.95 +/- 1.959
+In-ICU Mortality,Proposed Model,concat,88.45 +/- 0.260,51.92 +/- 0.665,42.00 +/- 3.203
+In-ICU Mortality,Best Baseline,,89.04 +/- 0.058,52.93 +/- 0.028,44.81 +/- 0.302
+In-Hospital Mortality,Proposed Model,word2vec,88.10 +/- 0.233,58.43 +/- 0.517,46.10 +/- 1.380
+In-Hospital Mortality,Proposed Model,fasttext,87.85 +/- 0.210,57.73 +/- 0.529,45.01 +/- 1.618
+In-Hospital Mortality,Proposed Model,concat,88.03 +/- 0.201,58.07 +/- 0.526,46.01 +/- 1.626
+In-Hospital Mortality,Best Baseline,,88.01 +/- 0.128,59.11 +/- 0.362,48.13 +/- 0.435
